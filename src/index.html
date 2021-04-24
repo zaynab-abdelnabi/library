@@ -8,8 +8,260 @@
     <title>كتبك | الصفحة الرئيسية</title>
 </head>
 
-<body>
-    
+<body data-spy="scroll" data-target=".navbar" data-offset="120">
+    <div class="container-fluid">
+        <!-- top menu -->
+        <section id="top-menu" class="row">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/booklogo.png" alt="logo">
+                    كتبك
+                </a>
+                <a href="#" type="button" data-toggle="tooltip" data-placement="bottom" title="عربة الشراء"
+                    class="custom-btn mr-auto d-lg-none">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <span><i class="fas fa-bars px-4"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item active">
+                            <a class="nav-link scroll" href="#about-us">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#our-books">منشوراتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#contact-us">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item mr-lg-auto">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#login">
+                                <i class="fas fa-sign-in-alt"></i>
+                                تسجيل الدخول
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" type="button" data-toggle="tooltip" data-placement="bottom" title="عربة الشراء"
+                    class="custom-btn mx-5 d-none d-lg-block">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </nav>
+            <!-- Modal -->
+            <div class="modal fade" id="login" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                            <button type="button" class="close btn" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">البريد الالكتروني:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">كلمة السر:</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="custom-link">نسيت كلمة المرور</a>
+                            <a href="#" class="custom-link mx-auto">حساب جديد</a>
+                            <button type="button" class="btn custom-btn">دخول</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end model -->
+        </section>
+        <!-- end of top-menu -->
+
+        <!-- search section -->
+        <section id="search">
+            <div class="text-center">
+                <h1 class="pb-3">دار النشر كتبك</h1>
+                <h3 class="pb-3">أساس الابداع و التميز</h3>
+                <div class="form-group custom-search">
+                    <label for="#search" class="pb-3">إبحث عن كتبك المفضلة</label>
+                    <div class="d-flex justify-content-center">
+                        <input type="text" class="form-control search-input" placeholder="بحث">
+                        <button type="submit" class="btn btn-search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of search section -->
+
+        <!-- about us -->
+        <section id="about-us">
+            <div class="row d-flex justify-content-center">
+                <div class="about-us-text text-center">
+                    <h4 class="title">من نحن</h4>
+                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                        التطبيق.
+                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص
+                        لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث
+                        يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                </div>
+            </div>
+        </section>
+        <!--end of about us -->
+
+        <!-- our books -->
+        <section id="our-books">
+            <div class="container">
+                <div class="text-center">
+                    <h4 class="title">منشوراتنا</h4>
+                </div>
+                <div class="row">
+                    <!-- first book -->
+                    <div class="col-md-6">
+                        <div class="card text-center mb-5 mx-auto" style="width: 20rem;">
+                            <img src="./images/firstbook1.png" class="card-img-top" alt="cover book">
+                            <div class="card-body">
+                                <h5 class="card-title">مدخل إلى تجربة المستخدم</h5>
+                                <p class="card-text">يبدأ الكتاب بتعريفِ العمل الحرّ، ومجالاتِه، ومُميّزاتهِ وعُيوبِه.
+                                    ثمّ يُرشِدُكَ إِلى الكيفيّةِ التي تَبدأُ بِها عملكَ الحُرّ بخطواتٍ بسيطةٍ وسهلةِ
+                                    التّطبيق.
+                                </p>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(103 مراجعة)</span>
+                                </div>
+                                <a href="first-book.html" class="btn custom-btn mt-4">المزيد عن الكتاب</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of first book -->
+
+                    <!-- second book -->
+                    <div class="col-md-6">
+                        <div class="card text-center mb-5 mx-auto" style="width: 20rem;">
+                            <img src="./images/secondbook1.png" class="card-img-top" alt="cover book">
+                            <div class="card-body">
+                                <h5 class="card-title">طريقك للعمل الحر عبر الانترنت</h5>
+                                <p class="card-text">يبدأ الكتاب بشرح مفاهيم عامة عن تجربة المستخدم ليواصِل مع شرح كيفية
+                                    إجراء مختلف الدراسات التي يحتاج المصمِّم للقيام بها، ومتطلباتها، ثم الأمور الواجب
+                                    أخذها بالحسبان عند التصميم لضمان تجربة استخدام مريحة وممتازة
+                                </p>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <span>(73 مراجعة)</span>
+                                </div>
+                                <a href="second-book.html" class="btn custom-btn mt-4">المزيد عن الكتاب</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of second book -->
+                </div>
+            </div>
+        </section>
+        <!-- end of our books -->
+
+        <!-- contact us -->
+        <section id="contact-us">
+            <!-- map -->
+            <div class="row">
+                <div class="col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13161.89047400811!2d35.86385359965453!3d34.440148838299734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb8cefb52b495efcc!2zQXJhYiBQYWxlc3RpbmlhbiBDdWx0dXJhbCBDbHViINin2YTZhtin2K_ZiiDYp9mE2KvZgtin2YHZiiDYp9mE2YHZhNiz2LfZitmG2Yog2KfZhNi52LHYqNmK!5e0!3m2!1sen!2slb!4v1619275754091!5m2!1sen!2slb"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <!-- end map -->
+
+            <!-- contact options -->
+            <div class="row " id="contact">
+                <!-- contact info -->
+                <div class="col-lg-3 offset-lg-2">
+                    <h4 class="title">
+                        معلومات التواصل
+                    </h4>
+                    <div id="contact-info">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fas fa-phone icon"></i>
+                                +9613123153
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope icon"></i>
+                                info@palclub.com
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                لبنان - طرابلس - مخيم البداوي
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of contact info -->
+
+                <!-- send message -->
+                <div class="col-lg-6">
+                    <h4 class="title">
+                        اترك رسالة
+                    </h4>
+                    <form id="send-message">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input type="text" name="name" class="form-control"
+                                    placeholder="الاسم" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input type="email" name="email" class="form-control"
+                                    placeholder="البريد الالكتروني" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <textarea name="comment" id="comment" class="form-control custom-textarea"
+                                    placeholder="نص الرسالة" required></textarea>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <button type="submit" class="btn custom-btn float-left">
+                                <span>
+                                    ارسال الرسالة
+                                    <i class="far fa-paper-plane"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- end of send message -->
+            </div>
+            <!-- end of contact options -->
+
+        </section>
+        <!-- end of contact us -->
+
+        <!-- footer -->
+        <footer class="text-center">
+            <p class="mb-0">
+                جميع الحقوق محفوظة لدار النشر كتبك
+                &copy;
+                <script>document.write(new Date().getFullYear())</script>
+            </p>
+        </footer>
+        <!-- end footer -->
+    </div>
 </body>
 
 </html>

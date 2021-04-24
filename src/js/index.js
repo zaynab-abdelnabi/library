@@ -5,3 +5,10 @@ import 'jquery/dist/jquery';
 import 'popper.js/dist/popper';
 import '../sass/style.scss';
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    $('a.scroll').on('click', function (event) {
+        var hash = this.hash;
+        $('html,body').animate({ scrollTop: $(hash).offset().top - 100 }, 800, function () { });
+    });
+})
