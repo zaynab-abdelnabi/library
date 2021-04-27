@@ -4,29 +4,17 @@
     h1,h4{
         padding-bottom: 20px;
     }
-    .book-details{
-        .colored{
-            color: $first-book-color;
-        }
-    }
     img{
         width: 400px;
     }
 }
-.custom-btn-book1{
-    border: 1px solid $first-book-color !important;
-    background-color: $first-book-color;
-    color: white !important;
-    &:hover, &:focus, &:active{
-        color: white !important;
-        background-color: darken($first-book-color, 10) !important;
-        box-shadow: none !important;
-    }
-}
-.title-book{
+.colored1{
     color: $first-book-color !important;
-    
 }
+.custom-btn-book1{
+    @include button-color-style ($first-book-color);
+}
+
 
 #image-gallery {
     .modal-body{
