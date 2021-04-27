@@ -1,0 +1,21 @@
+#book{
+    .book-details{
+        .colored{
+            color: $second-book-color;
+        }
+    }
+}
+.custom-btn-book2{
+    border: 1px solid $second-book-color !important;
+    background-color: $second-book-color;
+    color: white !important;
+    &:hover, &:focus, &:active{
+        color: white !important;
+        background-color: darken($second-book-color, 10) !important;
+        box-shadow: none !important;
+    }
+}
+.title-book{
+    color: $second-book-color !important;
+    
+}
